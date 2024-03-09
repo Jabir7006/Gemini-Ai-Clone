@@ -12,8 +12,8 @@ const PricingPage = () => {
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{ price: "price_1OragzAO6bU5Xnbp8MJzUFjN", quantity: 1 }],
       mode: "subscription",
-      successUrl: "http://localhost:5173/success",
-      cancelUrl: "http://localhost:5173/cancel",
+      successUrl: "https://gemini-ai-clone.vercel.app/success",
+      cancelUrl: "https://gemini-ai-clone.vercel.app/",
     });
 
     if (error) {

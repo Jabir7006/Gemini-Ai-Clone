@@ -61,12 +61,12 @@ const HomePage = () => {
         ) : (
           <section
             id="message-container"
-            className="flex flex-col gap-14 text-gray-300 min-h-[65vh] max-h-[65vh] overflow-y-scroll mx-2 sm:mx-5 md:mx-8 lg:mx-12"
+            className="flex flex-col gap-9 sm:gap-14 text-gray-300 min-h-[65vh] max-h-[65vh] overflow-y-scroll mx-2 sm:mx-5 md:mx-8 lg:mx-12 max-sm:pt-6"
           >
             {messages.map((message, index) => (
               <React.Fragment key={index}>
                 {/* result data */}
-                <div className="flex gap-5">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
                   <img
                     src={
                       message.role === "bot"
